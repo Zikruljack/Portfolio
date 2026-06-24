@@ -1,0 +1,7 @@
+# Each subfolder is its own git repo — ignore entirely
+obongcms/
+profile/
+
+# OS
+.DS_Store
+*.swp
