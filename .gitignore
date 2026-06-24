@@ -1,3 +1,6 @@
+# ObongCMS has its own repos
+obongcms/
+
 # OS
 .DS_Store
 *.swp
