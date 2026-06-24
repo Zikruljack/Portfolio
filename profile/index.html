@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Zikrullah — Freelance Developer</title>
+  <meta name="description" content="Portfolio Muhammad Zikrullah — Full-stack Developer & CMS Platform Builder">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Archivo', 'sans-serif'],
+            body: ['Space Grotesk', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50:  '#f4f4f5',
+              100: '#e4e4e7',
+              200: '#d4d4d8',
+              300: '#a1a1aa',
+              400: '#71717a',
+              500: '#52525b',
+              600: '#3f3f46',
+              700: '#27272a',
+              800: '#18181b',
+              900: '#09090b',
+            },
+            accent: {
+              DEFAULT: '#2563eb',
+              50:  '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              300: '#93c5fd',
+              400: '#60a5fa',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8',
+            }
+          },
+          animation: {
+            'fade-in':   'fadeIn 0.7s ease-out forwards',
+            'fade-up':   'fadeUp 0.7s ease-out forwards',
+            'scale-in':  'scaleIn 0.5s ease-out forwards',
+          },
+          keyframes: {
+            fadeIn:  { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+            fadeUp:  { '0%': { opacity: '0', transform: 'translateY(24px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+            scaleIn: { '0%': { opacity: '0', transform: 'scale(0.95)' }, '100%': { opacity: '1', transform: 'scale(1)' } },
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-body bg-brand-900 text-brand-100 antialiased selection:bg-accent/30 selection:text-white">
+
+  <!-- ========== NAV ========== -->
+  <nav class="fixed top-0 inset-x-0 z-50 backdrop-blur-md border-b border-brand-700/50 transition-colors duration-300" id="navbar">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-heading text-lg font-semibold tracking-tight hover:text-accent transition-colors">MZ</a>
+      <div class="hidden sm:flex items-center gap-8 text-sm font-medium text-brand-300">
+        <a href="#tentang" class="hover:text-accent transition-colors nav-link">Tentang</a>
+        <a href="#keahlian" class="hover:text-accent transition-colors nav-link">Keahlian</a>
+        <a href="#proyek" class="hover:text-accent transition-colors nav-link">Proyek</a>
+        <a href="#kontak" class="hover:text-accent transition-colors nav-link">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="min-h-dvh flex items-center justify-center px-6 pt-16 relative overflow-hidden">
+    <!-- subtle bg grain -->
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%224%22 height=%224%22><path d=%22M0 0h1v1H0zm2 2h1v1H2z%22 fill=%22%23fff%22/></svg>')"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative">
+      <div class="reveal">
+        <p class="text-accent font-medium text-sm tracking-[0.2em] uppercase mb-6">Full-stack Developer</p>
+        <h1 class="font-heading text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-[1.05]">
+          Muhammad<br>
+          <span class="text-brand-300">Zikrullah</span>
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-brand-400 max-w-2xl mx-auto leading-relaxed">
+          Membangun platform digital — dari CMS multi-tenant hingga solusi web tailored untuk kebutuhan Anda.
+        </p>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 reveal" data-delay="200">
+        <a href="#proyek" class="group relative inline-flex items-center gap-2 px-8 py-3.5 bg-accent text-white font-medium rounded-xl overflow-hidden transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5">
+          <span class="relative z-10">Lihat Proyek</span>
+          <svg class="relative z-10 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+        <a href="#kontak" class="inline-flex items-center gap-2 px-8 py-3.5 border border-brand-600 text-brand-300 font-medium rounded-xl hover:border-accent hover:text-accent transition-all duration-300">
+          Hubungi Saya
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== TENTANG ========== -->
+  <section id="tentang" class="px-6 py-28 sm:py-36">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="reveal">
+          <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Tentang</span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-4">Yang Saya <span class="text-brand-400">Kerjakan</span></h2>
+          <div class="mt-6 space-y-4 text-brand-400 leading-relaxed">
+            <p>Saya <strong class="text-brand-200">Muhammad Zikrullah</strong> — full-stack developer yang fokus membangun platform web modern, scalable, dan mudah dikelola.</p>
+            <p>Saat ini sedang mengembangkan <strong class="text-brand-200">ObongCMS</strong>, CMS multi-tenant dengan Go Edge renderer yang bisa melayani banyak domain dari satu instalasi.</p>
+            <p>Saya percaya teknologi yang baik adalah yang menyederhanakan kompleksitas — bukan menambahnya.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 reveal" data-delay="150">
+          <div class="p-6 rounded-2xl border border-brand-700/50 bg-brand-800/30 backdrop-blur-sm hover:border-accent/30 transition-colors duration-300">
+            <div class="text-accent text-3xl font-heading font-bold">3+</div>
+            <div class="mt-1 text-sm text-brand-400">Tahun Pengalaman</div>
+          </div>
+          <div class="p-6 rounded-2xl border border-brand-700/50 bg-brand-800/30 backdrop-blur-sm hover:border-accent/30 transition-colors duration-300">
+            <div class="text-accent text-3xl font-heading font-bold">CI4</div>
+            <div class="mt-1 text-sm text-brand-400">CodeIgniter 4</div>
+          </div>
+          <div class="p-6 rounded-2xl border border-brand-700/50 bg-brand-800/30 backdrop-blur-sm hover:border-accent/30 transition-colors duration-300">
+            <div class="text-accent text-3xl font-heading font-bold">Go</div>
+            <div class="mt-1 text-sm text-brand-400">Golang Edge</div>
+          </div>
+          <div class="p-6 rounded-2xl border border-brand-700/50 bg-brand-800/30 backdrop-blur-sm hover:border-accent/30 transition-colors duration-300">
+            <div class="text-accent text-3xl font-heading font-bold">MySQL</div>
+            <div class="mt-1 text-sm text-brand-400">Database</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KEAHLIAN ========== -->
+  <section id="keahlian" class="px-6 py-28 sm:py-36 border-t border-brand-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Keahlian</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-4">Tech Stack</h2>
+        <p class="mt-4 text-brand-400">Tools dan teknologi yang saya gunakan sehari-hari.</p>
+      </div>
+
+      <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="skill-card reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold">Backend</h3>
+          </div>
+          <p class="text-sm text-brand-400">PHP · CodeIgniter 4 · Golang · REST API · MySQL</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold">Frontend</h3>
+          </div>
+          <p class="text-sm text-brand-400">HTML · Tailwind · JavaScript · Go Templates</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold">Infrastructure</h3>
+          </div>
+          <p class="text-sm text-brand-400">Nginx · Linux · WSL · Docker · Git</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold">Security</h3>
+          </div>
+          <p class="text-sm text-brand-400">RBAC · enkripsi ID · 2FA · session management</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 00-3.7-3.7 48.678 48.678 0 00-7.324 0 4.006 4.006 0 00-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3l-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 003.7 3.7 48.656 48.656 0 007.324 0 4.006 4.006 0 003.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3l-3 3"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold">DevOps</h3>
+          </div>
+          <p class="text-sm text-brand-400">CI/CD · CLI tools · automation · composer</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center text-accent">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"/></svg>
+            </div>
+            <h3 class="font-heading font-semibold">Multi-tenant</h3>
+          </div>
+          <p class="text-sm text-brand-400">Arsitektur SaaS · isolasi tenant · snapshot engine</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROYEK ========== -->
+  <section id="proyek" class="px-6 py-28 sm:py-36 border-t border-brand-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Proyek</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-4">Yang Pernah <span class="text-brand-400">Dibangun</span></h2>
+      </div>
+
+      <div class="mt-16 space-y-6">
+        <!-- ObongCMS -->
+        <a href="../obongcms" class="project-card reveal group block p-8 rounded-2xl border border-brand-700/50 bg-brand-800/30 backdrop-blur-sm hover:border-accent/30 transition-all duration-500">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div class="flex-1">
+              <div class="flex items-center gap-3 mb-2">
+                <h3 class="font-heading text-xl font-semibold group-hover:text-accent transition-colors">ObongCMS</h3>
+                <span class="px-2.5 py-0.5 text-[11px] font-medium rounded-full bg-accent/10 text-accent tracking-wide uppercase">Aktif</span>
+              </div>
+              <p class="text-brand-400 leading-relaxed">Multi-tenant CMS untuk berita dan web pemerintahan. CI4 panel + Go Edge renderer — satu backend melayani banyak domain.</p>
+              <div class="mt-4 flex flex-wrap gap-2">
+                <span class="px-3 py-1 text-xs rounded-full bg-brand-800 text-brand-400">PHP</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-brand-800 text-brand-400">Go</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-brand-800 text-brand-400">MySQL</span>
+                <span class="px-3 py-1 text-xs rounded-full bg-brand-800 text-brand-400">Nginx</span>
+              </div>
+            </div>
+            <svg class="w-8 h-8 text-brand-500 group-hover:text-accent transition-colors shrink-0 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== KONTAK / CTA ========== -->
+  <section id="kontak" class="px-6 py-28 sm:py-36 border-t border-brand-800">
+    <div class="max-w-3xl mx-auto text-center reveal">
+      <span class="text-accent text-sm font-medium tracking-[0.2em] uppercase">Kontak</span>
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold tracking-tight mt-4">Mari <span class="text-brand-400">Bekerja Sama</span></h2>
+      <p class="mt-4 text-brand-400 max-w-lg mx-auto leading-relaxed">
+        Punya proyek atau butuh platform digital? Saya siap bantu dari konsep hingga deploy.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="mailto:zikrullah@example.com" class="group relative inline-flex items-center gap-2 px-8 py-3.5 bg-accent text-white font-medium rounded-xl overflow-hidden transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Kirim Email
+        </a>
+        <a href="https://github.com/Zikruljack" target="_blank" class="inline-flex items-center gap-2 px-8 py-3.5 border border-brand-600 text-brand-300 font-medium rounded-xl hover:border-accent hover:text-accent transition-all duration-300">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="px-6 py-10 border-t border-brand-800">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-brand-500">
+      <p>&copy; 2026 Muhammad Zikrullah. All rights reserved.</p>
+      <p class="tracking-wider">Dibangun dengan <span class="text-accent">&#9829;</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
