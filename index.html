@@ -80,8 +80,26 @@
         <a href="#tentang" class="hover:text-accent transition-colors nav-link">Tentang</a>
         <a href="#keahlian" class="hover:text-accent transition-colors nav-link">Keahlian</a>
         <a href="#portofolio" class="hover:text-accent transition-colors nav-link">Portofolio</a>
+        <a href="#cara-kerja" class="hover:text-accent transition-colors nav-link">Cara Kerja</a>
         <a href="#jasa" class="hover:text-accent transition-colors nav-link">Jasa</a>
+        <a href="#faq" class="hover:text-accent transition-colors nav-link">FAQ</a>
         <a href="#kontak" class="hover:text-accent transition-colors nav-link">Kontak</a>
+      </div>
+      <button id="menu-toggle" class="sm:hidden flex flex-col gap-1.5 p-2 -mr-2" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line w-6 h-0.5 bg-brand-200 transition-all duration-300"></span>
+        <span class="hamburger-line w-6 h-0.5 bg-brand-200 transition-all duration-300"></span>
+        <span class="hamburger-line w-6 h-0.5 bg-brand-200 transition-all duration-300"></span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="sm:hidden overflow-hidden max-h-0 transition-all duration-300 ease-in-out bg-brand-900/95 backdrop-blur-md border-t border-brand-700/50">
+      <div class="px-6 py-4 flex flex-col gap-3 text-sm font-medium text-brand-300">
+        <a href="#tentang" class="hover:text-accent transition-colors mobile-nav-link py-1">Tentang</a>
+        <a href="#keahlian" class="hover:text-accent transition-colors mobile-nav-link py-1">Keahlian</a>
+        <a href="#portofolio" class="hover:text-accent transition-colors mobile-nav-link py-1">Portofolio</a>
+        <a href="#cara-kerja" class="hover:text-accent transition-colors mobile-nav-link py-1">Cara Kerja</a>
+        <a href="#jasa" class="hover:text-accent transition-colors mobile-nav-link py-1">Jasa</a>
+        <a href="#faq" class="hover:text-accent transition-colors mobile-nav-link py-1">FAQ</a>
+        <a href="#kontak" class="hover:text-accent transition-colors mobile-nav-link py-1">Kontak</a>
       </div>
     </div>
   </nav>
@@ -103,6 +121,11 @@
         <p class="mt-6 text-lg sm:text-xl text-brand-400 max-w-2xl mx-auto leading-relaxed">
           Siap bantu bangun platform digital Anda — dari landing page perusahaan, CMS, hingga sistem web tailored.
         </p>
+        <div class="mt-4 flex flex-wrap items-center justify-center gap-3 text-sm text-brand-500">
+          <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>3+ Tahun Pengalaman</span>
+          <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>10+ Proyek Pemerintah</span>
+          <span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-accent"></span>CI4 · Express · Flutter</span>
+        </div>
       </div>
 
       <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 reveal" data-delay="200">
@@ -114,9 +137,16 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
           </svg>
         </a>
-        <a href="#kontak"
+        <a href="Muhammad_Zikrullah-Full_Stack_Developer-CV.pdf" download
           class="inline-flex items-center gap-2 px-8 py-3.5 border border-brand-600 text-brand-300 font-medium rounded-xl hover:border-accent hover:text-accent transition-all duration-300">
-          Hubungi Saya
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+          Download CV
+        </a>
+        <a href="https://wa.me/6282274027272" target="_blank"
+          class="inline-flex items-center gap-2 px-8 py-3.5 border border-brand-600 text-brand-300 font-medium rounded-xl hover:border-accent hover:text-accent transition-all duration-300">
+          Konsultasi Gratis
         </a>
       </div>
     </div>
@@ -629,6 +659,51 @@
     </div>
   </section>
 
+  <!-- ========== CARA KERJA ========== -->
+  <section id="cara-kerja" class="px-6 py-28 sm:py-36 border-t border-brand-800">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto reveal">
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold tracking-tight">Cara <span
+            class="text-brand-400">Kerja</span></h2>
+        <p class="mt-4 text-brand-400">Dari ide hingga live — prosesnya transparan dan terstruktur.</p>
+      </div>
+
+      <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 reveal" data-delay="100">
+        <div class="relative text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">1</span>
+          </div>
+          <h3 class="mt-4 font-heading font-semibold">Konsultasi</h3>
+          <p class="mt-2 text-sm text-brand-400">Diskusi kebutuhan & scope proyek secara gratis.</p>
+          <div class="hidden lg:block absolute top-7 left-[calc(50%+2rem)] w-[calc(100%-4rem)] border-t border-dashed border-brand-600"></div>
+        </div>
+        <div class="relative text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">2</span>
+          </div>
+          <h3 class="mt-4 font-heading font-semibold">Analisis & Desain</h3>
+          <p class="mt-2 text-sm text-brand-400">Wireframe, arsitektur sistem, dan timeline pengerjaan.</p>
+          <div class="hidden lg:block absolute top-7 left-[calc(50%+2rem)] w-[calc(100%-4rem)] border-t border-dashed border-brand-600"></div>
+        </div>
+        <div class="relative text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">3</span>
+          </div>
+          <h3 class="mt-4 font-heading font-semibold">Development</h3>
+          <p class="mt-2 text-sm text-brand-400">Coding iteratif dengan review dan update berkala.</p>
+          <div class="hidden lg:block absolute top-7 left-[calc(50%+2rem)] w-[calc(100%-4rem)] border-t border-dashed border-brand-600"></div>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center">
+            <span class="font-heading text-xl font-bold text-accent">4</span>
+          </div>
+          <h3 class="mt-4 font-heading font-semibold">Deploy & Support</h3>
+          <p class="mt-2 text-sm text-brand-400">Go-live, training penggunaan, dan maintenance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ========== JASA ========== -->
   <section id="jasa" class="px-6 py-28 sm:py-36 border-t border-brand-800">
     <div class="max-w-6xl mx-auto">
@@ -654,6 +729,7 @@
             <h4 class="font-heading font-semibold text-sm tracking-wide uppercase text-brand-400">Basic</h4>
             <div class="mt-2 flex items-baseline gap-1"><span class="font-heading text-3xl font-bold">Rp 500<span
                   class="text-accent">k</span></span></div>
+            <p class="mt-1 text-xs text-brand-500">~1-2 minggu</p>
             <ul class="mt-4 space-y-2 text-sm text-brand-300">
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
@@ -677,6 +753,7 @@
             <h4 class="font-heading font-semibold text-sm tracking-wide uppercase text-accent">Bisnis</h4>
             <div class="mt-2 flex items-baseline gap-1"><span class="font-heading text-3xl font-bold">Rp 1,5<span
                   class="text-accent">jt</span></span></div>
+            <p class="mt-1 text-xs text-brand-500">~3-4 minggu</p>
             <ul class="mt-4 space-y-2 text-sm text-brand-300">
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
@@ -701,6 +778,7 @@
             <h4 class="font-heading font-semibold text-sm tracking-wide uppercase text-brand-400">Profesional</h4>
             <div class="mt-2 flex items-baseline gap-1"><span class="font-heading text-3xl font-bold">Rp 3<span
                   class="text-accent">jt</span></span></div>
+            <p class="mt-1 text-xs text-brand-500">~1-2 bulan</p>
             <ul class="mt-4 space-y-2 text-sm text-brand-300">
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
@@ -739,6 +817,7 @@
             <h4 class="font-heading font-semibold text-sm tracking-wide uppercase text-brand-400">Basic</h4>
             <div class="mt-2 flex items-baseline gap-1"><span class="font-heading text-3xl font-bold">Rp 500<span
                   class="text-accent">k</span></span></div>
+            <p class="mt-1 text-xs text-brand-500">~1-2 minggu</p>
             <ul class="mt-4 space-y-2 text-sm text-brand-300">
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
@@ -762,6 +841,7 @@
             <h4 class="font-heading font-semibold text-sm tracking-wide uppercase text-accent">Bisnis</h4>
             <div class="mt-2 flex items-baseline gap-1"><span class="font-heading text-3xl font-bold">Rp 1,5<span
                   class="text-accent">jt</span></span></div>
+            <p class="mt-1 text-xs text-brand-500">~3-4 minggu</p>
             <ul class="mt-4 space-y-2 text-sm text-brand-300">
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
@@ -786,6 +866,7 @@
             <h4 class="font-heading font-semibold text-sm tracking-wide uppercase text-brand-400">Profesional</h4>
             <div class="mt-2 flex items-baseline gap-1"><span class="font-heading text-3xl font-bold">Rp 3<span
                   class="text-accent">jt</span></span></div>
+            <p class="mt-1 text-xs text-brand-500">~1-2 bulan</p>
             <ul class="mt-4 space-y-2 text-sm text-brand-300">
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
@@ -826,6 +907,7 @@
             <h4 class="font-heading font-semibold text-sm tracking-wide uppercase text-brand-400">Basic</h4>
             <div class="mt-2 flex items-baseline gap-1"><span class="font-heading text-3xl font-bold">Rp 2<span
                   class="text-accent">jt</span></span></div>
+            <p class="mt-1 text-xs text-brand-500">~2-3 minggu</p>
             <ul class="mt-4 space-y-2 text-sm text-brand-300">
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
@@ -849,6 +931,7 @@
             <h4 class="font-heading font-semibold text-sm tracking-wide uppercase text-accent">Bisnis</h4>
             <div class="mt-2 flex items-baseline gap-1"><span class="font-heading text-3xl font-bold">Rp 5<span
                   class="text-accent">jt</span></span></div>
+            <p class="mt-1 text-xs text-brand-500">~1-2 bulan</p>
             <ul class="mt-4 space-y-2 text-sm text-brand-300">
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
@@ -873,6 +956,7 @@
             <h4 class="font-heading font-semibold text-sm tracking-wide uppercase text-brand-400">Profesional</h4>
             <div class="mt-2 flex items-baseline gap-1"><span class="font-heading text-3xl font-bold">Rp 10<span
                   class="text-accent">jt+</span></span></div>
+            <p class="mt-1 text-xs text-brand-500">~2-3 bulan</p>
             <ul class="mt-4 space-y-2 text-sm text-brand-300">
               <li class="flex items-start gap-2"><svg class="w-4 h-4 text-accent mt-0.5 shrink-0" fill="none"
                   stroke="currentColor" viewBox="0 0 24 24">
@@ -899,10 +983,86 @@
       <div class="mt-20 text-center reveal">
         <p class="text-brand-400">Harga bisa berbeda tergantung kebutuhan spesifik.<br> <strong
             class="text-brand-200">Konsultasi gratis</strong> — diskusiin dulu aja.</p>
-        <a href="#kontak"
+        <a href="https://wa.me/6282274027272" target="_blank"
           class="mt-6 inline-flex items-center gap-2 px-8 py-3.5 bg-accent text-white font-medium rounded-xl hover:brightness-110 hover:-translate-y-0.5 transition-all duration-300">
-          Hubungi Saya
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Konsultasi Gratis via WhatsApp
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section id="faq" class="px-6 py-28 sm:py-36 border-t border-brand-800">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center reveal">
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold tracking-tight">Pertanyaan <span
+            class="text-brand-400">Umum</span></h2>
+        <p class="mt-4 text-brand-400">Hal-hal yang sering ditanyakan sebelum mulai proyek.</p>
+      </div>
+
+      <div class="mt-12 space-y-3 reveal" data-delay="100">
+        <div class="faq-item border border-brand-700/50 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left font-medium hover:text-accent transition-colors">
+            <span>Bagaimana proses kerjanya?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-500 transition-transform duration-300 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="px-6 pb-4 text-sm text-brand-400 leading-relaxed">Dimulai dari konsultasi gratis untuk memahami kebutuhan, lalu saya buatkan wireframe dan timeline. Setelah deal, development berjalan iteratif dengan update berkala hingga deploy dan training.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-brand-700/50 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left font-medium hover:text-accent transition-colors">
+            <span>Berapa lama pengerjaan?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-500 transition-transform duration-300 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="px-6 pb-4 text-sm text-brand-400 leading-relaxed">Tergantung scope dan kompleksitas. Website landing page bisa 1-2 minggu, sistem dengan CMS sekitar 3-4 minggu, dan aplikasi mobile 1-3 bulan. Estimasi detail diberikan setelah konsultasi.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-brand-700/50 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left font-medium hover:text-accent transition-colors">
+            <span>Sistem pembayaran seperti apa?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-500 transition-transform duration-300 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="px-6 pb-4 text-sm text-brand-400 leading-relaxed">DP 50% di awal untuk memulai pengerjaan, pelunasan 50% setelah proyek selesai dan disetujui. Pembayaran via transfer bank.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-brand-700/50 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left font-medium hover:text-accent transition-colors">
+            <span>Apakah termasuk hosting dan domain?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-500 transition-transform duration-300 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="px-6 pb-4 text-sm text-brand-400 leading-relaxed">Tergantung paket. Untuk paket Basic, client menyediakan hosting sendiri. Untuk paket Bisnis dan Profesional, saya bantu setup hosting dan domain dengan biaya terpisah sesuai provider.</p>
+          </div>
+        </div>
+
+        <div class="faq-item border border-brand-700/50 rounded-xl overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-6 py-4 text-left font-medium hover:text-accent transition-colors">
+            <span>Bagaimana kalau butuh revisi setelah selesai?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-500 transition-transform duration-300 shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
+            <p class="px-6 pb-4 text-sm text-brand-400 leading-relaxed">Setiap paket sudah termasuk jatah revisi. Setelah jatah habis, revisi tambahan bisa dikenakan biaya sesuai scope perubahan. Paket Profesional termasuk maintenance 6 bulan.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>

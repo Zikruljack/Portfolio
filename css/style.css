@@ -79,6 +79,28 @@ button:focus-visible,
   color: #fff;
 }
 
+/* --- Hamburger animation --- */
+#menu-toggle.is-open .hamburger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+#menu-toggle.is-open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle.is-open .hamburger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* --- FAQ accordion --- */
+.faq-item.is-open .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-item.is-open {
+  border-color: rgba(255, 69, 0, 0.3);
+}
+
 /* --- prefers-reduced-motion --- */
 @media (prefers-reduced-motion: reduce) {
   .reveal {

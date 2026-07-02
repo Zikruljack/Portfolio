@@ -61,6 +61,47 @@ document.querySelectorAll('.nav-link, a[href^="#"]').forEach((link) => {
   });
 });
 
+// --- Mobile hamburger menu ---
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('is-open');
+    menuToggle.classList.toggle('is-open', open);
+    menuToggle.setAttribute('aria-expanded', open);
+    mobileMenu.style.maxHeight = open ? mobileMenu.scrollHeight + 'px' : '0';
+  });
+
+  mobileMenu.querySelectorAll('.mobile-nav-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('is-open');
+      menuToggle.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      mobileMenu.style.maxHeight = '0';
+    });
+  });
+}
+
+// --- FAQ accordion ---
+document.querySelectorAll('.faq-toggle').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const content = item.querySelector('.faq-content');
+    const isOpen = item.classList.contains('is-open');
+
+    document.querySelectorAll('.faq-item.is-open').forEach((openItem) => {
+      openItem.classList.remove('is-open');
+      openItem.querySelector('.faq-content').style.maxHeight = '0';
+    });
+
+    if (!isOpen) {
+      item.classList.add('is-open');
+      content.style.maxHeight = content.scrollHeight + 'px';
+    }
+  });
+});
+
 // --- prefers-reduced-motion: reveal all content immediately ---
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if (prefersReducedMotion.matches) {
