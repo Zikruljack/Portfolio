@@ -28,19 +28,25 @@ skillCards.forEach((card, i) => {
   card.style.setProperty('--card-index', i);
 });
 
-// --- Navbar scroll effect ---
+// --- Navbar scroll effect (IntersectionObserver) ---
 const navbar = document.getElementById('navbar');
-let lastScroll = 0;
+const navSentinel = document.createElement('div');
+navSentinel.style.position = 'absolute';
+navSentinel.style.top = '60px';
+navSentinel.style.left = '0';
+navSentinel.style.width = '1px';
+navSentinel.style.height = '1px';
+document.body.prepend(navSentinel);
 
-window.addEventListener('scroll', () => {
-  const currentScroll = window.scrollY;
-  if (currentScroll > 60) {
-    navbar.classList.add('bg-brand-900/80', 'shadow-lg', 'shadow-black/10');
-  } else {
-    navbar.classList.remove('bg-brand-900/80', 'shadow-lg', 'shadow-black/10');
-  }
-  lastScroll = currentScroll;
-});
+const navObserver = new IntersectionObserver(
+  ([entry]) => {
+    navbar.classList.toggle('bg-brand-900/80', !entry.isIntersecting);
+    navbar.classList.toggle('shadow-lg', !entry.isIntersecting);
+    navbar.classList.toggle('shadow-black/10', !entry.isIntersecting);
+  },
+  { threshold: 0 }
+);
+navObserver.observe(navSentinel);
 
 // --- Smooth anchor scroll with offset ---
 document.querySelectorAll('.nav-link, a[href^="#"]').forEach((link) => {
@@ -55,12 +61,7 @@ document.querySelectorAll('.nav-link, a[href^="#"]').forEach((link) => {
   });
 });
 
-// --- Cursor pointer on all clickables (UX rule) ---
-document.querySelectorAll('a, button, [role="button"]').forEach((el) => {
-  el.style.cursor = 'pointer';
-});
-
-// --- prefers-reduced-motion: disable all animations ---
+// --- prefers-reduced-motion: reveal all content immediately ---
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if (prefersReducedMotion.matches) {
   document.querySelectorAll('.reveal').forEach((el) => {
